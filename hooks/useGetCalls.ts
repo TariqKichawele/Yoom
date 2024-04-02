@@ -11,10 +11,11 @@ export const useGetCalls = () => {
 
     useEffect(() => {
         const loadCalls = async () => {
+            if(!client || user?.id) return;
             setIsLoading(true);
 
             try {
-                const { calls } = await client?.queryCalls({
+                const { calls } = await client.queryCalls({
                     sort: [{
                         field: 'starts_at',
                         direction: -1
@@ -24,8 +25,8 @@ export const useGetCalls = () => {
                             $exists: true
                         },
                         $or: [
-                            { created_by_user_id: user.id },
-                            { members: { $in: [ user.id ]}},
+                            { created_by_user_id: user?.id },
+                            { members: { $in: [ user?.id ]}},
                         ]
                     }
                 });
