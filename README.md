@@ -1,3 +1,33 @@
+# Yoom
+
+Welcome to Yoomi, a video-sharing web application that replicates the functionality of Zoom. Yoomi enables users to securely log in, create meetings, and access various meeting functionalities such as recording, screen sharing, and managing participants. Built with TypeScript, Liveblocks, Fabric.js, Shadcn, and Tailwind CSS, Yoomi offers a seamless and secure video conferencing experience.
+
+![Screenshot 2024-05-13 at 12 53 55 PM](https://github.com/TariqKichawele/Yoom/assets/105932024/0e205edb-143c-4acb-b736-c448e3e151fb)
+
+**TECHNOLOGIES USED**
+
+**Frontend:**
+- TypeScript: A statically typed superset of JavaScript for building scalable and robust applications.
+- Tailwind CSS: A utility-first CSS framework for styling web interfaces.
+  
+**Backend:**
+- Liveblocks: A platform for building real-time collaborative applications.
+- Fabric.js: A JavaScript library for interactive and customizable HTML5 canvas graphics.
+- Shadcn: A library for implementing shadow effects in web applications.
+  
+**Features**
+- Authentication: Implements authentication and authorization features using Clerk, allowing users to securely log in via social sign-on or traditional email and password methods, while ensuring appropriate access levels and permissions within the platform.
+- New Meeting: Quickly start a new meeting, configuring camera and microphone settings before joining.
+- Meeting Controls: Participants have full control over meeting aspects, including recording, emoji reactions, screen sharing, muting/unmuting, sound adjustments, grid layout, participant list view, and individual participant management (pinning, muting, unmuting, blocking, allowing video share).
+- Exit Meeting: Participants can leave a meeting, or creators can end it for all attendees.
+- Schedule Future Meetings: Input meeting details (date, time) to schedule future meetings, accessible on the 'Upcoming Meetings' page for sharing the link or immediate start.
+- Past Meetings List: Access a list of previously held meetings, including details and metadata.
+- View Recorded Meetings: Access recordings of past meetings for review or reference.
+- Personal Room: Users have a personal room with a unique meeting link for instant meetings, shareable with others.
+- Join Meetings via Link: Easily join meetings created by others by providing a link.
+- Secure Real-time Functionality: All interactions within the platform are secure and occur in real-time, maintaining user privacy and data integrity.
+- Responsive Design: Follows responsive design principles to ensure optimal user experience across devices, adapting seamlessly to different screen sizes and resolutions.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
